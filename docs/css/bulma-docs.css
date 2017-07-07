@@ -95,7 +95,7 @@ th {
 
 html {
   background-color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 300px;
@@ -133,7 +133,7 @@ body {
   color: #4a4a4a;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.8;
   overflow-x: hidden;
 }
 
@@ -153,7 +153,8 @@ code {
   color: #ff3860;
   font-size: 0.8em;
   font-weight: normal;
-  padding: 0.25em 0.5em 0.25em;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 hr {
@@ -161,7 +162,7 @@ hr {
   border: none;
   display: block;
   height: 1px;
-  margin: 1.5rem 0;
+  margin-top: 32px;
 }
 
 img {
@@ -202,7 +203,8 @@ pre code {
   display: block;
   font-size: 1em;
   overflow-x: auto;
-  padding: 1.25rem 1.5rem;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 table {
@@ -630,7 +632,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 }
 
 .box:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 32px;
 }
 
 a.box:hover, a.box:focus {
@@ -645,18 +647,18 @@ a.box:active {
   -moz-appearance: none;
   -webkit-appearance: none;
   align-items: center;
-  border: 1px solid transparent;
+  border: solid transparent;
+  border-width: 1px;
+  padding: 31px;
   border-radius: 3px;
   box-shadow: none;
   display: inline-flex;
-  font-size: 1rem;
-  height: 2.25em;
+  font-size: 18px;
+  height: 32px;
   justify-content: flex-start;
   line-height: 1.5;
-  padding-bottom: calc(0.375em - 1px);
-  padding-left: calc(0.625em - 1px);
-  padding-right: calc(0.625em - 1px);
-  padding-top: calc(0.375em - 1px);
+  padding-top: 16px;
+  padding-bottom: 16px;
   position: relative;
   vertical-align: top;
   -webkit-touch-callout: none;
@@ -1572,15 +1574,15 @@ a.box:active {
 
 .button.is-small {
   border-radius: 2px;
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 .button.is-medium {
-  font-size: 1.25rem;
+  font-size: 27px;
 }
 
 .button.is-large {
-  font-size: 1.5rem;
+  font-size: 41px;
 }
 
 .button[disabled] {
@@ -1637,7 +1639,7 @@ input[type="submit"].button {
 }
 
 .content:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 32px;
 }
 
 .content li + li {
@@ -1802,15 +1804,15 @@ input[type="submit"].button {
 }
 
 .content.is-small {
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 .content.is-medium {
-  font-size: 1.25rem;
+  font-size: 27px;
 }
 
 .content.is-large {
-  font-size: 1.5rem;
+  font-size: 41px;
 }
 
 .input,
@@ -1818,18 +1820,18 @@ input[type="submit"].button {
   -moz-appearance: none;
   -webkit-appearance: none;
   align-items: center;
-  border: 1px solid transparent;
+  border: solid transparent;
+  border-width: 1px;
+  padding: 31px;
   border-radius: 3px;
   box-shadow: none;
   display: inline-flex;
-  font-size: 1rem;
-  height: 2.25em;
+  font-size: 18px;
+  height: 32px;
   justify-content: flex-start;
   line-height: 1.5;
-  padding-bottom: calc(0.375em - 1px);
-  padding-left: calc(0.625em - 1px);
-  padding-right: calc(0.625em - 1px);
-  padding-top: calc(0.375em - 1px);
+  padding-top: 16px;
+  padding-bottom: 16px;
   position: relative;
   vertical-align: top;
   background-color: white;
@@ -1948,17 +1950,17 @@ input[type="submit"].button {
 .input.is-small,
 .textarea.is-small {
   border-radius: 2px;
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 .input.is-medium,
 .textarea.is-medium {
-  font-size: 1.25rem;
+  font-size: 27px;
 }
 
 .input.is-large,
 .textarea.is-large {
-  font-size: 1.5rem;
+  font-size: 41px;
 }
 
 .input.is-fullwidth,
@@ -2040,18 +2042,18 @@ input[type="submit"].button {
   -moz-appearance: none;
   -webkit-appearance: none;
   align-items: center;
-  border: 1px solid transparent;
+  border: solid transparent;
+  border-width: 1px;
+  padding: 31px;
   border-radius: 3px;
   box-shadow: none;
   display: inline-flex;
-  font-size: 1rem;
-  height: 2.25em;
+  font-size: 18px;
+  height: 32px;
   justify-content: flex-start;
   line-height: 1.5;
-  padding-bottom: calc(0.375em - 1px);
-  padding-left: calc(0.625em - 1px);
-  padding-right: calc(0.625em - 1px);
-  padding-top: calc(0.375em - 1px);
+  padding-top: 16px;
+  padding-bottom: 16px;
   position: relative;
   vertical-align: top;
   background-color: white;
@@ -2158,15 +2160,15 @@ input[type="submit"].button {
 
 .select.is-small {
   border-radius: 2px;
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 .select.is-medium {
-  font-size: 1.25rem;
+  font-size: 27px;
 }
 
 .select.is-large {
-  font-size: 1.5rem;
+  font-size: 41px;
 }
 
 .select.is-disabled:after {
@@ -2200,21 +2202,21 @@ input[type="submit"].button {
 }
 
 .select.is-loading.is-small:after {
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 .select.is-loading.is-medium:after {
-  font-size: 1.25rem;
+  font-size: 27px;
 }
 
 .select.is-loading.is-large:after {
-  font-size: 1.5rem;
+  font-size: 41px;
 }
 
 .label {
   color: #363636;
   display: block;
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -2223,20 +2225,20 @@ input[type="submit"].button {
 }
 
 .label.is-small {
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 .label.is-medium {
-  font-size: 1.25rem;
+  font-size: 27px;
 }
 
 .label.is-large {
-  font-size: 1.5rem;
+  font-size: 41px;
 }
 
 .help {
   display: block;
-  font-size: 0.75rem;
+  font-size: 12px;
   margin-top: 0.25rem;
 }
 
@@ -2410,18 +2412,18 @@ input[type="submit"].button {
     text-align: right;
   }
   .field-label.is-small {
-    font-size: 0.75rem;
+    font-size: 12px;
     padding-top: 0.375em;
   }
   .field-label.is-normal {
     padding-top: 0.375em;
   }
   .field-label.is-medium {
-    font-size: 1.25rem;
+    font-size: 27px;
     padding-top: 0.375em;
   }
   .field-label.is-large {
-    font-size: 1.5rem;
+    font-size: 41px;
     padding-top: 0.375em;
   }
 }
@@ -2446,7 +2448,7 @@ input[type="submit"].button {
 }
 
 .control {
-  font-size: 1rem;
+  font-size: 18px;
   position: relative;
   text-align: left;
 }
@@ -2466,15 +2468,15 @@ input[type="submit"].button {
 }
 
 .control.has-icon .input.is-small + .icon {
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 .control.has-icon .input.is-medium + .icon {
-  font-size: 1.25rem;
+  font-size: 27px;
 }
 
 .control.has-icon .input.is-large + .icon {
-  font-size: 1.5rem;
+  font-size: 41px;
 }
 
 .control.has-icon:not(.has-icon-right) .icon {
@@ -2502,19 +2504,19 @@ input[type="submit"].button {
 .control.has-icons-left .input.is-small ~ .icon,
 .control.has-icons-left .select select.is-small ~ .icon, .control.has-icons-right .input.is-small ~ .icon,
 .control.has-icons-right .select select.is-small ~ .icon {
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 .control.has-icons-left .input.is-medium ~ .icon,
 .control.has-icons-left .select select.is-medium ~ .icon, .control.has-icons-right .input.is-medium ~ .icon,
 .control.has-icons-right .select select.is-medium ~ .icon {
-  font-size: 1.25rem;
+  font-size: 27px;
 }
 
 .control.has-icons-left .input.is-large ~ .icon,
 .control.has-icons-left .select select.is-large ~ .icon, .control.has-icons-right .input.is-large ~ .icon,
 .control.has-icons-right .select select.is-large ~ .icon {
-  font-size: 1.5rem;
+  font-size: 41px;
 }
 
 .control.has-icons-left .icon, .control.has-icons-right .icon {
@@ -2562,15 +2564,15 @@ input[type="submit"].button {
 }
 
 .control.is-loading.is-small:after {
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 .control.is-loading.is-medium:after {
-  font-size: 1.25rem;
+  font-size: 27px;
 }
 
 .control.is-loading.is-large:after {
-  font-size: 1.5rem;
+  font-size: 41px;
 }
 
 .icon {
@@ -2696,7 +2698,7 @@ input[type="submit"].button {
 }
 
 .notification:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 32px;
 }
 
 .notification a:not(.button) {
@@ -2780,14 +2782,14 @@ input[type="submit"].button {
   border: none;
   border-radius: 290486px;
   display: block;
-  height: 1rem;
+  height: 18px;
   overflow: hidden;
   padding: 0;
   width: 100%;
 }
 
 .progress:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 32px;
 }
 
 .progress::-webkit-progress-bar {
@@ -2875,15 +2877,15 @@ input[type="submit"].button {
 }
 
 .progress.is-small {
-  height: 0.75rem;
+  height: 12px;
 }
 
 .progress.is-medium {
-  height: 1.25rem;
+  height: 27px;
 }
 
 .progress.is-large {
-  height: 1.5rem;
+  height: 41px;
 }
 
 .table {
@@ -2978,7 +2980,7 @@ input[type="submit"].button {
   border-radius: 290486px;
   color: #4a4a4a;
   display: inline-flex;
-  font-size: 0.75rem;
+  font-size: 12px;
   height: 2em;
   justify-content: center;
   line-height: 1.5;
@@ -3038,11 +3040,11 @@ input[type="submit"].button {
 }
 
 .tag.is-medium {
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 .tag.is-large {
-  font-size: 1.25rem;
+  font-size: 27px;
 }
 
 .title,
@@ -3052,7 +3054,7 @@ input[type="submit"].button {
 
 .title:not(:last-child),
 .subtitle:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 32px;
 }
 
 .title em,
@@ -3074,7 +3076,7 @@ input[type="submit"].button {
 
 .title {
   color: #363636;
-  font-size: 2rem;
+  font-size: 61px;
   font-weight: 300;
   line-height: 1.125;
 }
@@ -3092,32 +3094,32 @@ input[type="submit"].button {
 }
 
 .title.is-1 {
-  font-size: 3rem;
+  font-size: 137px;
 }
 
 .title.is-2 {
-  font-size: 2.5rem;
+  font-size: 91px;
 }
 
 .title.is-3 {
-  font-size: 2rem;
+  font-size: 61px;
 }
 
 .title.is-4 {
-  font-size: 1.5rem;
+  font-size: 41px;
 }
 
 .title.is-5 {
-  font-size: 1.25rem;
+  font-size: 27px;
 }
 
 .title.is-6 {
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 .subtitle {
   color: #4a4a4a;
-  font-size: 1.25rem;
+  font-size: 27px;
   font-weight: 300;
   line-height: 1.25;
 }
@@ -3131,31 +3133,31 @@ input[type="submit"].button {
 }
 
 .subtitle.is-1 {
-  font-size: 3rem;
+  font-size: 137px;
 }
 
 .subtitle.is-2 {
-  font-size: 2.5rem;
+  font-size: 91px;
 }
 
 .subtitle.is-3 {
-  font-size: 2rem;
+  font-size: 61px;
 }
 
 .subtitle.is-4 {
-  font-size: 1.5rem;
+  font-size: 41px;
 }
 
 .subtitle.is-5 {
-  font-size: 1.25rem;
+  font-size: 27px;
 }
 
 .subtitle.is-6 {
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 .block:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 32px;
 }
 
 .container {
@@ -3204,7 +3206,7 @@ input[type="submit"].button {
   display: inline-block;
   flex-grow: 0;
   flex-shrink: 0;
-  font-size: 1rem;
+  font-size: 18px;
   height: 20px;
   max-height: 20px;
   max-width: 20px;
@@ -3294,7 +3296,7 @@ input[type="submit"].button {
 }
 
 .highlight:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 32px;
 }
 
 .highlight pre {
@@ -3320,7 +3322,7 @@ input[type="submit"].button {
   background-color: whitesmoke;
   border-radius: 290486px;
   display: inline-flex;
-  font-size: 1.25rem;
+  font-size: 27px;
   height: 2em;
   justify-content: center;
   margin-right: 1.5rem;
@@ -3338,14 +3340,14 @@ input[type="submit"].button {
   user-select: none;
   align-items: stretch;
   display: flex;
-  font-size: 1rem;
+  font-size: 18px;
   overflow: hidden;
   overflow-x: auto;
   white-space: nowrap;
 }
 
 .breadcrumb:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 32px;
 }
 
 .breadcrumb a {
@@ -3401,15 +3403,15 @@ input[type="submit"].button {
 }
 
 .breadcrumb.is-small {
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 .breadcrumb.is-medium {
-  font-size: 1.25rem;
+  font-size: 27px;
 }
 
 .breadcrumb.is-large {
-  font-size: 1.5rem;
+  font-size: 41px;
 }
 
 .breadcrumb.has-arrow-separator li + li:before {
@@ -3563,7 +3565,7 @@ input[type="submit"].button {
 }
 
 .level:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 32px;
 }
 
 .level code {
@@ -3668,7 +3670,7 @@ input[type="submit"].button {
 }
 
 .menu {
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 .menu-list {
@@ -3716,11 +3718,11 @@ input[type="submit"].button {
 .message {
   background-color: whitesmoke;
   border-radius: 3px;
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 .message:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 32px;
 }
 
 .message.is-white {
@@ -3949,7 +3951,7 @@ input[type="submit"].button {
   display: inline-block;
   flex-grow: 0;
   flex-shrink: 0;
-  font-size: 1rem;
+  font-size: 18px;
   height: 20px;
   max-height: 20px;
   max-width: 20px;
@@ -4051,7 +4053,7 @@ input[type="submit"].button {
   color: #363636;
   flex-grow: 1;
   flex-shrink: 0;
-  font-size: 1.5rem;
+  font-size: 41px;
   line-height: 1;
 }
 
@@ -4160,7 +4162,7 @@ input[type="submit"].button {
   display: flex;
   flex-grow: 0;
   flex-shrink: 0;
-  font-size: 1rem;
+  font-size: 18px;
   justify-content: center;
   line-height: 1.5;
   padding: 0.5rem 0.75rem;
@@ -4313,22 +4315,22 @@ a.nav-item:not(.button).is-tab.is-active {
 
 .navbar {
   background-color: white;
-  min-height: 3.25rem;
+  min-height: 64px;
   position: relative;
 }
 
 .navbar-brand {
   align-items: stretch;
-  height: 3.25rem;
+  height: 64px;
   display: flex;
 }
 
 .navbar-burger {
   cursor: pointer;
   display: block;
-  height: 3.25rem;
+  height: 64px;
   position: relative;
-  width: 3.25rem;
+  width: 64px;
   margin-left: auto;
 }
 
@@ -4465,7 +4467,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
     display: flex;
   }
   .navbar {
-    height: 3.25rem;
+    height: 64px;
   }
   .navbar.is-transparent a.navbar-item:hover, .navbar.is-transparent a.navbar-item.is-active,
   .navbar.is-transparent .navbar-link:hover,
@@ -4591,20 +4593,20 @@ a.navbar-item:hover, a.navbar-item.is-active,
 }
 
 .pagination {
-  font-size: 1rem;
+  font-size: 18px;
   margin: -0.25rem;
 }
 
 .pagination.is-small {
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 .pagination.is-medium {
-  font-size: 1.25rem;
+  font-size: 27px;
 }
 
 .pagination.is-large {
-  font-size: 1.5rem;
+  font-size: 41px;
 }
 
 .pagination,
@@ -4622,18 +4624,18 @@ a.navbar-item:hover, a.navbar-item.is-active,
   -moz-appearance: none;
   -webkit-appearance: none;
   align-items: center;
-  border: 1px solid transparent;
+  border: solid transparent;
+  border-width: 1px;
+  padding: 31px;
   border-radius: 3px;
   box-shadow: none;
   display: inline-flex;
-  font-size: 1rem;
-  height: 2.25em;
+  font-size: 18px;
+  height: 32px;
   justify-content: flex-start;
   line-height: 1.5;
-  padding-bottom: calc(0.375em - 1px);
-  padding-left: calc(0.625em - 1px);
-  padding-right: calc(0.625em - 1px);
-  padding-top: calc(0.375em - 1px);
+  padding-top: 16px;
+  padding-bottom: 16px;
   position: relative;
   vertical-align: top;
   -webkit-touch-callout: none;
@@ -4784,7 +4786,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
 }
 
 .panel {
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 .panel:not(:last-child) {
@@ -4908,7 +4910,7 @@ label.panel-block:hover {
   user-select: none;
   align-items: stretch;
   display: flex;
-  font-size: 1rem;
+  font-size: 18px;
   justify-content: space-between;
   overflow: hidden;
   overflow-x: auto;
@@ -4916,7 +4918,7 @@ label.panel-block:hover {
 }
 
 .tabs:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 32px;
 }
 
 .tabs a {
@@ -5042,15 +5044,15 @@ label.panel-block:hover {
 }
 
 .tabs.is-small {
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 .tabs.is-medium {
-  font-size: 1.25rem;
+  font-size: 27px;
 }
 
 .tabs.is-large {
-  font-size: 1.5rem;
+  font-size: 41px;
 }
 
 .column {
@@ -7474,7 +7476,7 @@ svg {
 #carbonads .carbon-poweredby {
   bottom: 0;
   color: #7a7a7a;
-  font-size: 0.75rem;
+  font-size: 12px;
   left: 160px;
   line-height: 20px;
   padding: 0 15px 10px 0;
@@ -8018,7 +8020,7 @@ html.route-index #carbon {
 }
 
 .callout:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 32px;
 }
 
 .callout.is-white {

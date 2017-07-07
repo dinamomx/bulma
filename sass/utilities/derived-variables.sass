@@ -65,8 +65,26 @@ $link-active-border: $grey-dark !default
 
 // Typography
 
+$modularscale: ( base: $base-font-size, ratio: $base-ratio, tablet: ( ratio: $base-ratio-tablet), desktop: ( ratio: $base-ratio-desktop), widescreen: ( ratio: $base-ratio-widescreen), fullhd: ( ratio: $base-ratio-fullhd) )
+
+// Libraries for vertical rhythm
+@import '../../node_modules/ritmo/ritmo'
+@import '../../node_modules/modularscale-sass/stylesheets/modularscale'
+
+$body-size: $base-font-size !default
+
+$size-1: ms(5) !default
+$size-2: ms(4) !default
+$size-3: ms(3) !default
+$size-4: ms(2) !default
+$size-5: ms(1) !default
+$size-6: ms(0) !default
+$size-7: ms(-1) !default
+
 $family-primary: $family-sans-serif !default
 $family-code: $family-monospace !default
+$family-title: $family-sans-serif !default
+$family-subtitle: $family-sans-serif !default
 
 $size-small: $size-7 !default
 $size-normal: $size-6 !default
