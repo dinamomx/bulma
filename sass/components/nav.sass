@@ -1,4 +1,4 @@
-$nav-height: 3.25rem !default
+$nav-height: ritmo(2) !default
 
 // Components
 
@@ -15,13 +15,15 @@ $nav-height: 3.25rem !default
   flex-shrink: 0
   font-size: $size-normal
   justify-content: center
-  line-height: 1.5
+  +ritmo-baseline()
+  // line-height: 1.5
   padding: 0.5rem 0.75rem
+  +ritmo-paddings(.5)
   a
     flex-grow: 1
     flex-shrink: 0
   img
-    max-height: 1.75rem
+    max-height: ritmo(1.5)
   .tag
     &:first-child:not(:last-child)
       margin-right: 0.5rem
@@ -42,10 +44,10 @@ a.nav-item:not(.button)
   &.is-tab
     border-bottom: 1px solid transparent
     border-top: 1px solid transparent
-    padding-bottom: calc(0.75rem - 1px)
+    +ritmo-horizontal-borders(1px, .5)
     padding-left: 1rem
     padding-right: 1rem
-    padding-top: calc(0.75rem - 1px)
+    // +ritmo-paddings(.5)
     &:hover
       border-bottom-color: $primary
       border-top-color: transparent

@@ -42,8 +42,10 @@ $navbar-divider-background: $border !default
 .navbar-link
   color: $navbar-item
   display: block
-  line-height: 1.5
+  // line-height: 1.5
+  +ritmo-baseline()
   padding: 0.5rem 1rem
+  +ritmo-paddings(.5)
   position: relative
 
 a.navbar-item,

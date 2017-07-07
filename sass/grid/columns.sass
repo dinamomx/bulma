@@ -4,6 +4,7 @@
   flex-grow: 1
   flex-shrink: 1
   padding: 0.75rem
+  +ritmo-paddings(.5)
   .columns.is-mobile > &.is-narrow
     flex: none
   .columns.is-mobile > &.is-full
@@ -280,11 +281,11 @@
 .columns
   margin-left: -0.75rem
   margin-right: -0.75rem
-  margin-top: -0.75rem
+  +ritmo-bottom-margin(-.5)
   &:last-child
-    margin-bottom: -0.75rem
+    +ritmo-bottom-margin(-.5)
   &:not(:last-child)
-    margin-bottom: 0.75rem
+    +ritmo-bottom-margin(.5)
   // Modifiers
   &.is-centered
     justify-content: center
@@ -295,7 +296,8 @@
     &:last-child
       margin-bottom: 0
     &:not(:last-child)
-      margin-bottom: 1.5rem
+      // margin-bottom: 1.5rem
+      +ritmo-bottom-margin(.5)
     & > .column
       margin: 0
       padding: 0
@@ -306,6 +308,7 @@
       & > .column
         max-width: 33.3333%
         padding: 0.75rem
+        +ritmo-paddings(.5)
         width: 33.3333%
         & + .column
           margin-left: 0

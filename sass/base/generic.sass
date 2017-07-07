@@ -52,15 +52,15 @@ code
   color: $code
   font-size: 0.8em
   font-weight: normal
-  // padding: 0.25em 0.5em 0.25em
+  padding: 0.25em 0.5em 0.25em
   +ritmo-paddings(.5)
 
 hr
-  background-color: $border
+  // background-color: $border
   border: none
+  border-top: $border solid
   display: block
-  height: 1px
-  +ritmo-top-margin(1)
+  +ritmo-top-border(1px)
 
 img
   max-width: 100%
@@ -85,6 +85,7 @@ strong
 pre
   background-color: $pre-background
   color: $pre
+  line-height: $base-line-unit
   font-size: 0.8em
   white-space: pre
   word-wrap: normal
