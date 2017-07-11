@@ -166,7 +166,7 @@ $input-radius:              $radius !default
   font-size: $size-normal
   font-weight: $weight-bold
   &:not(:last-child)
-    margin-bottom: 0.5em
+    +ritmo-bottom-margin(.5)
   // Sizes
   &.is-small
     font-size: $size-small
@@ -178,7 +178,7 @@ $input-radius:              $radius !default
 .help
   display: block
   font-size: $size-small
-  margin-top: 0.25rem
+  +ritmo-bottom-margin(.25)
   @each $name, $pair in $colors
     $color: nth($pair, 1)
     &.is-#{$name}
@@ -188,7 +188,7 @@ $input-radius:              $radius !default
 
 .field
   &:not(:last-child)
-    margin-bottom: 0.75rem
+    +ritmo-bottom-margin(.5)
   // Modifiers
   &.has-addons
     display: flex
@@ -254,7 +254,7 @@ $input-radius:              $radius !default
   .label
     font-size: inherit
   +mobile
-    margin-bottom: 0.5rem
+    +ritmo-bottom-margin(.5)
   +tablet
     flex-basis: 0
     flex-grow: 1
@@ -263,15 +263,19 @@ $input-radius:              $radius !default
     text-align: right
     &.is-small
       font-size: $size-small
-      padding-top: 0.375em
+      +ritmo-top-padding(.5)
+      // padding-top: 0.375em
     &.is-normal
-      padding-top: 0.375em
+      +ritmo-top-padding(.5)
+      // padding-top: 0.375em
     &.is-medium
       font-size: $size-medium
-      padding-top: 0.375em
+      +ritmo-top-padding(.5)
+      // padding-top: 0.375em
     &.is-large
       font-size: $size-large
-      padding-top: 0.375em
+      +ritmo-top-padding(.5)
+      // padding-top: 0.375em
 
 .field-body
   +tablet
