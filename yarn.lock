@@ -932,6 +932,10 @@ map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-1.0.1.tgz#d933ceb9205d82bdcf4886f6742bdc2b4dea146d"
 
+mathsass@^0.10.1:
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/mathsass/-/mathsass-0.10.1.tgz#8768fe20210bd5daeab6d645c42c7e69a4c60008"
+
 mem@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/mem/-/mem-1.1.0.tgz#5edd52b485ca1d900fe64895505399a0dfa45f76"
