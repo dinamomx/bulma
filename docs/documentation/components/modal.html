@@ -1,8 +1,50 @@
 ---
+title: Modal
 layout: documentation
 doc-tab: components
 doc-subtab: modal
 ---
+
+{% capture modal %}
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <!-- Any other Bulma elements you want -->
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+{% endcapture %}
+
+{% capture image_modal %}
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <p class="image is-4by3">
+      <img src="{{site.url}}/images/placeholders/1280x960.png" alt="">
+    </p>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+{% endcapture %}
+
+{% capture modal_card %}
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Modal title</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <!-- Content ... -->
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success">Save changes</button>
+      <button class="button">Cancel</button>
+    </footer>
+  </div>
+</div>
+{% endcapture %}
 
 {% include subnav-components.html %}
 
@@ -10,6 +52,12 @@ doc-subtab: modal
   <div class="container">
     <h1 class="title">Modal</h1>
     <h2 class="subtitle">A classic <strong>modal</strong> overlay, in which you can include <em>any</em> content you want</h2>
+    {%
+      include meta.html
+      colors=false
+      sizes=false
+      variables=true
+    %}
 
     <hr>
 
@@ -36,15 +84,7 @@ doc-subtab: modal
       </p>
     </div>
 
-{% highlight html %}
-<div class="modal">
-  <div class="modal-background"></div>
-  <div class="modal-content">
-    <!-- Any other Bulma elements you want -->
-  </div>
-  <button class="modal-close is-large"></button>
-</div>
-{% endhighlight %}
+    {% highlight html %}{{ modal }}{% endhighlight %}
 
     <div class="content">
       <p>To <strong>activate</strong> the modal, just add the <code>is-active</code> modifier on the <code>.modal</code> container</p>
@@ -70,17 +110,7 @@ doc-subtab: modal
       </p>
     </div>
 
-{% highlight html %}
-<div class="modal">
-  <div class="modal-background"></div>
-  <div class="modal-content">
-    <p class="image is-4by3">
-      <img src="{{site.url}}/images/placeholders/1280x960.png">
-    </p>
-  </div>
-  <button class="modal-close is-large"></button>
-</div>
-{% endhighlight %}
+    {% highlight html %}{{ image_modal }}{% endhighlight %}
 
     <hr>
 
@@ -93,24 +123,11 @@ doc-subtab: modal
       </p>
     </div>
 
-{% highlight html %}
-<div class="modal">
-  <div class="modal-background"></div>
-  <div class="modal-card">
-    <header class="modal-card-head">
-      <p class="modal-card-title">Modal title</p>
-      <button class="delete"></button>
-    </header>
-    <section class="modal-card-body">
-      <!-- Content ... -->
-    </section>
-    <footer class="modal-card-foot">
-      <a class="button is-success">Save changes</a>
-      <a class="button">Cancel</a>
-    </footer>
-  </div>
-</div>
-{% endhighlight %}
+    <div class="highlight-full">
+      {% highlight html %}{{ modal_card }}{% endhighlight %}
+    </div>
+
+    {% include variables.html type='component' %}
 
   </div>
 </section>

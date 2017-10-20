@@ -1,17 +1,9 @@
 ---
+title: Menu
 layout: documentation
 doc-tab: components
 doc-subtab: menu
 ---
-
-{% include subnav-components.html %}
-
-<section class="section">
-  <div class="container">
-    <h1 class="title">Menu</h1>
-    <h2 class="subtitle">A simple <strong>menu</strong>, for any type of vertical navigation</h2>
-
-    <hr>
 
 {% capture menu_example %}
 <aside class="menu">
@@ -49,16 +41,25 @@ doc-subtab: menu
   </ul>
 </aside>
 {% endcapture %}
-<div class="columns">
-  <div class="column is-3">
-{{menu_example}}
-  </div>
-  <div class="column">
-{% highlight html %}
-{{menu_example}}
-{% endhighlight %}
-  </div>
-</div>
+
+{% include subnav-components.html %}
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Menu</h1>
+    <h2 class="subtitle">A simple <strong>menu</strong>, for any type of vertical navigation</h2>
+    {%
+      include meta.html
+      colors=false
+      sizes=false
+      variables=true
+    %}
+
+    <hr>
+
+    {% include snippet.html content=menu_example size="one-third" %}
+
+    {% include variables.html type='component' %}
 
   </div>
 </section>

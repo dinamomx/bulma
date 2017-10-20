@@ -6,13 +6,13 @@
 
     <a class="navbar-item is-hidden-desktop" href="{{ site.github }}" target="_blank">
       <span class="icon" style="color: #333;">
-        <i class="fa fa-github"></i>
+        <i class="fa fa-lg fa-github"></i>
       </span>
     </a>
 
     <a class="navbar-item is-hidden-desktop" href="{{ site.twitter }}" target="_blank">
       <span class="icon" style="color: #55acee;">
-        <i class="fa fa-twitter"></i>
+        <i class="fa fa-lg fa-twitter"></i>
       </span>
     </a>
 
@@ -25,9 +25,6 @@
 
   <div id="navMenu{{ include.id }}" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item {% if page.route == 'index' %}is-active{% endif %}" href="{{ site.url }}/">
-        Home
-      </a>
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link {% if page.route == 'documentation' %}is-active{% endif %} {% if page.layout == 'documentation' %}is-active{% endif %}" href="{{ site.documentation }}">
           Docs
@@ -39,8 +36,14 @@
           <a class="navbar-item {% if page.doc-tab == 'modifiers' %}is-active{% endif %}" href="{{ site.url }}/documentation/modifiers/syntax/">
             Modifiers
           </a>
-          <a class="navbar-item {% if page.doc-tab == 'grid' %}is-active{% endif %}" href="{{ site.url }}/documentation/grid/columns/">
-            Grid
+          <a class="navbar-item {% if page.doc-tab == 'columns' %}is-active{% endif %}" href="{{ site.url }}/documentation/columns/basics/">
+            Columns
+          </a>
+          <a class="navbar-item {% if page.doc-tab == 'layout' %}is-active{% endif %}" href="{{ site.url }}/documentation/layout/container/">
+            Layout
+          </a>
+          <a class="navbar-item {% if page.doc-tab == 'form' %}is-active{% endif %}" href="{{ site.url }}/documentation/form/general/">
+            Form
           </a>
           <a class="navbar-item {% if page.doc-tab == 'elements' %}is-active{% endif %}" href="{{ site.url }}/documentation/elements/box/">
             Elements
@@ -54,12 +57,18 @@
               Components
             </a>
           {% endif %}
-          <a class="navbar-item {% if page.doc-tab == 'layout' %}is-active{% endif %}" href="{{ site.url }}/documentation/layout/container/">
-            Layout
-          </a>
           <hr class="navbar-divider">
           <div class="navbar-item">
-            <div>version <p class="has-text-info">{{ site.version }}</p></div>
+            <div>
+              <p class="is-size-6-desktop">
+                <strong>{{ site.version }}</strong>
+              </p>
+              {{#unless site.deprecated}}
+                <small>
+                  <a class="bd-view-all-versions" href="https://versions.bulma.io/">View all versions</a>
+                </small>
+              {{/unless}}
+            </div>
           </div>
         </div>
       </div>
@@ -72,7 +81,7 @@
             <a class="navbar-item" href="{{ post.url }}">
               <div class="navbar-content">
                 <p>
-                  <small class="has-text-info">{{ post.date | date_to_string }}</small>
+                  <small class="has-text-link">{{ post.date | date_to_string }}</small>
                 </p>
                 <p>{{ post.title }}</p>
               </div>
@@ -92,7 +101,7 @@
                 </div>
                 <div class="level-right">
                   <div class="level-item">
-                    <a class="button is-rss is-small" href="{{ site.url }}/atom.xml">
+                    <a class="button bd-is-rss is-small" href="{{ site.url }}/atom.xml">
                       <span class="icon is-small">
                         <i class="fa fa-rss"></i>
                       </span>
@@ -105,30 +114,61 @@
           </div>
         </div>
       </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <div class="navbar-link">
+          More
+        </div>
+        <div id="moreDropdown" class="navbar-dropdown {% if include.boxed %}is-boxed{% endif %}">
+          <a class="navbar-item {% if page.route == 'bulma-start' %}is-active{% endif %}" href="{{ site.url }}/bulma-start/">
+            <p>
+              <strong>Bulma start</strong>
+              <br>
+              <small>A tiny npm package to get started</small>
+            </p>
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item {% if page.route == 'made-with-bulma' %}is-active{% endif %}" href="{{ site.url }}/made-with-bulma/">
+            <p>
+              <strong>Made with Bulma</strong>
+              <br>
+              <small>The official community badge</small>
+            </p>
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item {% if page.route == 'extensions' %}is-active{% endif %}" href="{{ site.url }}/extensions/">
+            <p>
+              <strong>Extensions</strong>
+              <br>
+              <small>Side projects to enhance Bulma</small>
+            </p>
+          </a>
+        </div>
+      </div>
+      <a class="navbar-item {% if page.route == 'expo' %}is-active{% endif %}" href="{{ site.url }}/expo/">
+        <span class="bd-emoji">⭐️</span>
+        Expo
+      </a>
+      <a class="navbar-item {% if page.route == 'love' %}is-active{% endif %}" href="{{ site.url }}/love/">
+        <span class="bd-emoji">❤️</span>
+        Love
+      </a>
     </div>
 
     <div class="navbar-end">
-      <a class="navbar-item" href="{{ site.github }}" target="_blank">
-        Github
+      <a class="navbar-item is-hidden-desktop-only" href="{{ site.github }}" target="_blank">
+        <span class="icon" style="color: #333;">
+          <i class="fa fa-lg fa-github"></i>
+        </span>
       </a>
-      <a class="navbar-item" href="{{ site.twitter }}" target="_blank">
-        Twitter
+      <a class="navbar-item is-hidden-desktop-only" href="{{ site.twitter }}" target="_blank">
+        <span class="icon" style="color: #55acee;">
+          <i class="fa fa-lg fa-twitter"></i>
+        </span>
       </a>
       <div class="navbar-item">
         <div class="field is-grouped">
           <p class="control">
-            <a id="twitter"
-              class="button"
-              data-social-network="Twitter"
-              data-social-action="tweet"
-              data-social-target="{{ site.url }}"
-              target="_blank"
-              href="https://twitter.com/intent/tweet?text={{ site.title | urlencode }}&url={{ site.url }}&via=jgthms">
-              <span class="icon">
-                <i class="fa fa-twitter"></i>
-              </span>
-              <span>Tweet</span>
-            </a>
+            {% include elements/tw-button.html label="Tweet" %}
           </p>
           <p class="control">
             <a class="button is-primary" href="{{ site.download }}">
