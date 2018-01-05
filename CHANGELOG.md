@@ -1,5 +1,32 @@
 # Bulma Changelog
 
+## 0.6.3
+
+### New features
+
+* 🎉 Rounded buttons, inputs, pagination and toggle tabs
+
+### Improvements
+
+* New `.is-italic` helper
+
+### Bug fixes
+
+* #1456 Fix customize documentation
+* #1190 Add `$variable-columns` to disable `--columnGap`
+* #1518 Fix spacing of the delete button in notification element
+* #1569 Fix missing use of `$pagination-color` variable
+
+## 0.6.2
+
+### Improvements
+
+* #1343 Add `sub` and `sup` title sizes
+
+### Bug fixes
+
+* #935 Bug dropdown in `hero` (primary) menu items not visible
+
 ## 0.6.1
 
 ### New features
@@ -7,15 +34,24 @@
 * 🎉 [List of buttons](https://bulma.io/documentation/elements/button/#list-of-buttons)
 * 🎉 #1235 Support for five column grid: `.is-one-fifth, .is-two-fifths, .is-three-fifths, .is-four-fifths`
 * 🎉 #1287 New `.is-invisible` helper
+* 🎉 #1255 New `.is-expanded` modifier for `navbar-item`
+* 🎉 #1384 New `.is-centered` and `.is-right` modifiers for `tags`
+* 🎉 #1383 New `.is-empty` modifier for `file`
+* 🎉 #1380 Allow `.is-selected` class on `<td>` and `<th>` tags
 
 ### Improvements
 
 * #987 Improve `tag > icon` spacing
 * Improve `hamburger` alignment
 
-### Issues closed
+### Bug fixes
 
+* #1358 Fix indentation bug for .is-one-fifth
+* #1356 SASS 3.5+ variable parsing compatibility allows only #{}
+* #1342 Remove black line from progress bar in IE
+* #1334 Fix progress bar colors in IE
 * #1313 Fix Table `is-selected` and `is-hoverable` styling issue
+* #963 Fix Delete Button Bug in iOS Safari
 
 ## 0.6.0
 

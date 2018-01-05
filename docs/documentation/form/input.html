@@ -78,6 +78,10 @@ variables_keys:
 </div>
 {% endcapture %}
 
+{% capture rounded_example %}
+<input class="input is-rounded" type="text" placeholder="Rounded input">
+{% endcapture %}
+
 {% capture normal_example %}
 <div class="control">
   <input class="input" type="text" placeholder="Normal input">
@@ -299,6 +303,19 @@ variables_keys:
       </div>
     </div>
 
+    {% include anchor.html name="Styles" %}
+
+    {% include elements/new-tag.html version="0.6.2" %}
+
+    <div class="columns">
+      <div class="column is-half">
+        {{ rounded_example }}
+      </div>
+      <div class="column is-half">
+        {% highlight html %}{{ rounded_example }}{% endhighlight %}
+      </div>
+    </div>
+
     {% include anchor.html name="States" %}
 
     <h4 class="subtitle">Normal</h4>
@@ -341,21 +358,19 @@ variables_keys:
       </div>
     </div>
 
-    {% if site.vernum >= 43 %}
-      <div class="columns">
-        <div class="column is-half">
-          <div class="content">
-            <p>
-              You can resize the loading spinner by appending <code>is-small</code>, <code>is-medium</code> or <code>is-large</code> to the <code>control</code> container.
-            </p>
-          </div>
-          {{loading_sizes_example}}
+    <div class="columns">
+      <div class="column is-half">
+        <div class="content">
+          <p>
+            You can resize the loading spinner by appending <code>is-small</code>, <code>is-medium</code> or <code>is-large</code> to the <code>control</code> container.
+          </p>
         </div>
-        <div class="column is-half">
-          {% highlight html %}{{loading_sizes_example}}{% endhighlight %}
-        </div>
+        {{loading_sizes_example}}
       </div>
-    {% endif %}
+      <div class="column is-half">
+        {% highlight html %}{{loading_sizes_example}}{% endhighlight %}
+      </div>
+    </div>
 
     <h4 class="subtitle">Disabled</h4>
     <div class="columns">
