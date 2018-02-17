@@ -10,13 +10,13 @@
 
     <a class="navbar-item is-hidden-desktop" href="{{ site.github }}" target="_blank">
       <span class="icon" style="color: #333;">
-        <i class="fa fa-lg fa-github"></i>
+        <i class="fab fa-lg fa-github"></i>
       </span>
     </a>
 
     <a class="navbar-item is-hidden-desktop" href="{{ site.twitter }}" target="_blank">
       <span class="icon" style="color: #55acee;">
-        <i class="fa fa-lg fa-twitter"></i>
+        <i class="fab fa-lg fa-twitter"></i>
       </span>
     </a>
 
@@ -101,7 +101,7 @@
                   <div class="level-item">
                     <a class="button bd-is-rss is-small" href="{{ site.url }}/atom.xml">
                       <span class="icon is-small">
-                        <i class="fa fa-rss"></i>
+                        <i class="fas fa-rss"></i>
                       </span>
                       <span>Subscribe</span>
                     </a>
@@ -117,36 +117,89 @@
           More
         </div>
         <div id="moreDropdown" class="navbar-dropdown {% if include.boxed %}is-boxed{% endif %}">
-          <a class="navbar-item {% if page.route == 'backers' %}is-active{% endif %}" href="{{ site.url }}/backers/">
-            <p>
-              <strong>Patreon backers</strong>
-              <br>
-              <small>Everyone who is supporting Bulma</small>
-            </p>
-          </a>
-          <hr class="navbar-divider">
           <a class="navbar-item {% if page.route == 'bulma-start' %}is-active{% endif %}" href="{{ site.url }}/bulma-start/">
-            <p>
-              <strong>Bulma start</strong>
-              <br>
-              <small>A tiny npm package to get started</small>
-            </p>
+            <div class="media">
+              <div class="media-left">
+                <span class="icon is-large has-text-success">
+                  <i class="fas fa-rocket fa-2x"></i>
+                </span>
+              </div>
+              <div class="media-content">
+                <p>
+                  <strong>Bulma start</strong>
+                  <br>
+                  <small>A tiny npm package to get started</small>
+                </p>
+              </div>
+            </div>
           </a>
           <hr class="navbar-divider">
           <a class="navbar-item {% if page.route == 'made-with-bulma' %}is-active{% endif %}" href="{{ site.url }}/made-with-bulma/">
-            <p>
-              <strong>Made with Bulma</strong>
-              <br>
-              <small>The official community badge</small>
-            </p>
+            <div class="media">
+              <div class="media-left">
+                <span class="icon is-large has-text-primary">
+                  <i class="fas fa-certificate fa-2x"></i>
+                </span>
+              </div>
+              <div class="media-content">
+                <p>
+                  <strong>Made with Bulma</strong>
+                  <br>
+                  <small>The official community badge</small>
+                </p>
+              </div>
+            </div>
+          </a>
+          <hr class="navbar-divider">
+          <a id="moreDropdownBootstrap" class="navbar-item {% if page.route == 'backers' %}is-active{% endif %}" href="{{ site.url }}/alternative-to-bootstrap/">
+            <div class="media">
+              <div class="media-left">
+                <span class="icon is-large">
+                  <i class="fas fa-exchange-alt fa-2x"></i>
+                </span>
+              </div>
+              <div class="media-content">
+                <p>
+                  <strong>Coming from Bootstrap</strong>
+                  <br>
+                  <small>See how Bulma is an alternative to Bootstrap</small>
+                </p>
+              </div>
+            </div>
+          </a>
+          <hr class="navbar-divider">
+          <a id="moreDropdownPatreon" class="navbar-item {% if page.route == 'backers' %}is-active{% endif %}" href="{{ site.url }}/backers/">
+            <div class="media">
+              <div class="media-left">
+                <span class="icon is-large">
+                  <i class="fab fa-patreon fa-2x"></i>
+                </span>
+              </div>
+              <div class="media-content">
+                <p>
+                  <strong>Patreon backers</strong>
+                  <br>
+                  <small>Everyone who is supporting Bulma</small>
+                </p>
+              </div>
+            </div>
           </a>
           <hr class="navbar-divider">
           <a class="navbar-item {% if page.route == 'extensions' %}is-active{% endif %}" href="{{ site.url }}/extensions/">
-            <p>
-              <strong>Extensions</strong>
-              <br>
-              <small>Side projects to enhance Bulma</small>
-            </p>
+            <div class="media">
+              <div class="media-left">
+                <span class="icon is-large has-text-danger">
+                  <i class="fas fa-plug fa-2x"></i>
+                </span>
+              </div>
+              <div class="media-content">
+                <p>
+                  <strong>Extensions</strong>
+                  <br>
+                  <small>Side projects to enhance Bulma</small>
+                </p>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -163,23 +216,36 @@
     <div class="navbar-end">
       <a class="navbar-item is-hidden-desktop-only" href="{{ site.github }}" target="_blank">
         <span class="icon" style="color: #333;">
-          <i class="fa fa-lg fa-github"></i>
+          <i class="fab fa-lg fa-github"></i>
         </span>
       </a>
       <a class="navbar-item is-hidden-desktop-only" href="{{ site.twitter }}" target="_blank">
         <span class="icon" style="color: #55acee;">
-          <i class="fa fa-lg fa-twitter"></i>
+          <i class="fab fa-lg fa-twitter"></i>
         </span>
       </a>
       <div class="navbar-item">
-        <div class="field is-grouped">
+        <div class="field is-grouped is-grouped-multiline">
+          <p class="control">
+            <a href="https://www.patreon.com/jgthms" target="_blank" style="display: block;">
+              <img
+                style="display: block; max-height: 36px;"
+                src="/images/become_a_patron_button.png"
+                width="153"
+                height="36"
+                srcset="/images/become_a_patron_button@3x.png 3x,
+                        /images/become_a_patron_button@2x.png 2x,
+                        /images/become_a_patron_button.png 1x"
+                alt="Become a patron">
+            </a>
+          </p>
           <p class="control">
             {% include elements/tw-button.html label="Tweet" %}
           </p>
           <p class="control">
             <a class="button is-primary" href="{{ site.download }}">
               <span class="icon">
-                <i class="fa fa-download"></i>
+                <i class="fas fa-download"></i>
               </span>
               <span>Download</span>
             </a>
@@ -192,4 +258,4 @@
   </div>
 </nav>
 
-{% include patreon.html %}
+{% include fortyfour.html %}

@@ -1,4 +1,4 @@
-/*! bulma.io v0.6.1 | MIT License | github.com/jgthms/bulma */
+/*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {
     -webkit-transform: rotate(0deg);
@@ -7502,6 +7502,17 @@ a.navbar-link.is-active {
 
 .pagination.is-large {
   font-size: 36px;
+}
+
+.pagination.is-rounded .pagination-previous,
+.pagination.is-rounded .pagination-next {
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 290486px;
+}
+
+.pagination.is-rounded .pagination-link {
+  border-radius: 290486px;
 }
 
 .pagination.is-rounded .pagination-previous,
