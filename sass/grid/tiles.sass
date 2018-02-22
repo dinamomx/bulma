@@ -1,3 +1,5 @@
+$tile-gap: ritmo(1)
+
 .tile
   align-items: stretch
   display: block
@@ -7,21 +9,21 @@
   min-height: min-content
   // Modifiers
   &.is-ancestor
-    margin-left: -0.75rem
-    margin-right: -0.75rem
-    margin-top: -0.75rem
+    margin-left: -$tile-gap
+    margin-right: -$tile-gap
+    margin-top: -$tile-gap
     &:last-child
-      margin-bottom: -0.75rem
+      margin-bottom: -$tile-gap
     &:not(:last-child)
-      margin-bottom: 0.75rem
+      margin-bottom: $tile-gap
   &.is-child
     margin: 0 !important
   &.is-parent
-    padding: 0.75rem
+    padding: $tile-gap
   &.is-vertical
     flex-direction: column
     & > .tile.is-child:not(:last-child)
-      margin-bottom: 1.5rem !important
+      margin-bottom: $tile-gap * 2 !important
   // Responsiveness
   +tablet
     &:not(.is-child)

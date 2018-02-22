@@ -1,16 +1,16 @@
 $content-heading-color: $text-strong !default
 $content-heading-weight: $weight-normal !default
-$content-heading-line-height: 1.125 !default
+$content-heading-line-height: $base-line !default
 
 $content-blockquote-background-color: $background !default
 $content-blockquote-border-left: 5px solid $border !default
-$content-blockquote-padding: 1.25em 1.5em !default
+$content-blockquote-padding: ritmo(1) 1.5em !default
 
-$content-pre-padding: 1.25em 1.5em !default
+$content-pre-padding: ritmo(1) 1.5em !default
 
 $content-table-cell-border: 1px solid $border !default
 $content-table-cell-border-width: 0 0 1px !default
-$content-table-cell-padding: 0.5em 0.75em !default
+$content-table-cell-padding: ritmo(1) 0.75em !default
 $content-table-cell-heading-color: $text-strong !default
 $content-table-row-hover-background-color: $background !default
 $content-table-head-cell-border-width: 0 0 2px !default
@@ -22,7 +22,7 @@ $content-table-foot-cell-color: $text-strong !default
   +block
   // Inline
   li + li
-    margin-top: 0.25em
+    margin-top: ritmo(1)
   // Block
   p,
   dl,
@@ -32,7 +32,7 @@ $content-table-foot-cell-color: $text-strong !default
   pre,
   table
     &:not(:last-child)
-      margin-bottom: 1em
+      margin-bottom: ritmo(1)
   h1,
   h2,
   h3,
