@@ -14,19 +14,7 @@ $ritmo-border-width: 1px;
 $rem-with-px-fallback: true;
 @debug lineheight $base-line-height $base-line;
 
-    .demo_col .notification {
-      padding: 0;
-      width: 100%;
-      height: $base-line-height * 3;
-
-    }
-
 :root {
-
-  --g-baseline-height: $base-line-height / 2;
-
+  --g-baseline-height: #{$base-line-height / 2};
   --g-baseline-start: 0;
-
-
-
 }

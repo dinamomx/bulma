@@ -1211,6 +1211,10 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
+mathsass@^0.10.1:
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/mathsass/-/mathsass-0.10.1.tgz#8768fe20210bd5daeab6d645c42c7e69a4c60008"
+
 mem@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/mem/-/mem-1.1.0.tgz#5edd52b485ca1d900fe64895505399a0dfa45f76"
@@ -1290,6 +1294,10 @@ mixin-deep@^1.2.0:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+modularscale-sass@^3.0.3:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/modularscale-sass/-/modularscale-sass-3.0.5.tgz#18847c3ae4fc506b7dfab0c0df3b398663c97b5f"
 
 ms@2.0.0:
   version "2.0.0"
@@ -1829,6 +1837,10 @@ rimraf@2, rimraf@^2.5.1, rimraf@^2.6.1, rimraf@^2.6.2:
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.2.tgz#2ed8150d24a16ea8651e6d6ef0f47c4158ce7a36"
   dependencies:
     glob "^7.0.5"
+
+ritmo@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/ritmo/-/ritmo-0.5.0.tgz#7d5e275836cb47366f0e42fd52f34a686d7a43a7"
 
 safe-buffer@^5.0.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
