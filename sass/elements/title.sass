@@ -1,6 +1,7 @@
 $title-color: $grey-darker !default
 $title-size: $size-3 !default
 $title-weight: $weight-semibold !default
+$title-line-height: 1.125 !default
 $title-strong-color: inherit !default
 $title-strong-weight: inherit !default
 $title-sub-size: 0.75em !default
@@ -9,8 +10,10 @@ $title-sup-size: 0.75em !default
 $subtitle-color: $grey-dark !default
 $subtitle-size: $size-5 !default
 $subtitle-weight: $weight-normal !default
+$subtitle-line-height: 1.25 !default
 $subtitle-strong-color: $grey-darker !default
 $subtitle-strong-weight: $weight-semibold !default
+$subtitle-negative-margin: -1.25rem !default
 
 .title,
 .subtitle
@@ -32,6 +35,7 @@ $subtitle-strong-weight: $weight-semibold !default
   font-weight: $title-weight
   +ritmo-bottom-margin(1)
   +ritmo-font-size($title-size)
+  // line-height: $title-line-height
   strong
     color: $title-strong-color
     font-weight: $title-strong-weight
@@ -55,7 +59,7 @@ $subtitle-strong-weight: $weight-semibold !default
     color: $subtitle-strong-color
     font-weight: $subtitle-strong-weight
   &:not(.is-spaced) + .title
-    margin-top: -1.5rem
+    margin-top: $subtitle-negative-margin
   // Sizes
   @each $size in $sizes
     $i: index($sizes, $size)
