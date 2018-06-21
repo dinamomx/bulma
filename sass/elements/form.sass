@@ -149,11 +149,10 @@ $help-size: $size-small !default
   vertical-align: top
   &:not(.is-multiple)
     height: 2.25em
+  &:not(.is-multiple):not(.is-loading)
     &::after
       +arrow($input-arrow)
-      margin-top: -0.375em
       right: 1.125em
-      top: 50%
       z-index: 4
   &.is-rounded
     select
@@ -178,19 +177,25 @@ $help-size: $size-small !default
       option
         padding: 0.5em 1em
   // States
-  &:hover
+  &:not(.is-multiple):not(.is-loading):hover
     &::after
       border-color: $input-hover-color
   // Colors
   @each $name, $pair in $colors
     $color: nth($pair, 1)
-    &.is-#{$name} select
-      border-color: $color
-      &:focus,
-      &.is-focused,
-      &:active,
-      &.is-active
-        box-shadow: $input-focus-box-shadow-size rgba($color, 0.25)
+    &.is-#{$name}
+      &:not(:hover)::after
+        border-color: $color
+      select
+        border-color: $color
+        &:hover,
+        &.is-hovered
+          border-color: darken($color, 5%)
+        &:focus,
+        &.is-focused,
+        &:active,
+        &.is-active
+          box-shadow: $input-focus-box-shadow-size rgba($color, 0.25)
   // Sizes
   &.is-small
     +control-small
@@ -394,7 +399,7 @@ $help-size: $size-small !default
   font-size: $size-normal
   font-weight: $label-weight
   &:not(:last-child)
-    margin-bottom: 0.5em
+    +ritmo-bottom-margin(.5)
   // Sizes
   &.is-small
     font-size: $size-small
@@ -406,7 +411,7 @@ $help-size: $size-small !default
 .help
   display: block
   font-size: $help-size
-  margin-top: 0.25rem
+  +ritmo-bottom-margin(.25)
   @each $name, $pair in $colors
     $color: nth($pair, 1)
     &.is-#{$name}
@@ -416,7 +421,7 @@ $help-size: $size-small !default
 
 .field
   &:not(:last-child)
-    margin-bottom: 0.75rem
+    +ritmo-bottom-margin(.5)
   // Modifiers
   &.has-addons
     display: flex
@@ -498,7 +503,7 @@ $help-size: $size-small !default
   .label
     font-size: inherit
   +mobile
-    margin-bottom: 0.5rem
+    +ritmo-bottom-margin(.5)
   +tablet
     flex-basis: 0
     flex-grow: 1
@@ -507,15 +512,19 @@ $help-size: $size-small !default
     text-align: right
     &.is-small
       font-size: $size-small
-      padding-top: 0.375em
+      +ritmo-top-padding(.5)
+      // padding-top: 0.375em
     &.is-normal
-      padding-top: 0.375em
+      +ritmo-top-padding(.5)
+      // padding-top: 0.375em
     &.is-medium
       font-size: $size-medium
-      padding-top: 0.375em
+      +ritmo-top-padding(.5)
+      // padding-top: 0.375em
     &.is-large
       font-size: $size-large
-      padding-top: 0.375em
+      +ritmo-top-padding(.5)
+      // padding-top: 0.375em
 
 .field-body
   .field .field
@@ -535,6 +544,7 @@ $help-size: $size-small !default
         margin-right: 0.75rem
 
 .control
+  clear: both //fixes the icon floating out of the input when help text is floated right
   font-size: $size-normal
   position: relative
   text-align: left

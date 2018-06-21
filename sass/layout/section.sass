@@ -1,13 +1,16 @@
-$section-padding: ritmo($base-line-multi * 2) 1.5rem !default
-$section-padding-medium: ritmo($base-line-multi * 3) 1.5rem !default
-$section-padding-large: ritmo($base-line-multi * 4) 1.5rem !default
+$section-padding: ritmo(1) ritmo(1) !default
+$section-padding-medium: ritmo(2) ritmo(1) !default
+$section-padding-large: ritmo(3) ritmo(1) !default
 
 .section
   padding: $section-padding
+  +ritmo-paddings(1)
   // Responsiveness
   +desktop
     // Sizes
     &.is-medium
       padding: $section-padding-medium
+      +ritmo-paddings(2)
     &.is-large
       padding: $section-padding-large
+      +ritmo-paddings(3)

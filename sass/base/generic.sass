@@ -12,7 +12,7 @@ $code-weight: normal !default
 $code-size: 0.875em !default
 
 $hr-background-color: $border !default
-$hr-height: 1px !default
+$hr-height: 2px !default
 $hr-margin: ritmo(1) 0 calc(#{ritmo(1)} - 1px) !default
 
 $strong-color: $text-strong !default
@@ -53,9 +53,14 @@ pre
 
 body
   color: $body-color
+<<<<<<< HEAD
   font-size: $base-font-size
+=======
+  font-size: 1rem
+  line-height: $base-line-unit
+  overflow-x: hidden
+>>>>>>> master
   font-weight: $body-weight
-  line-height: $body-line-height
 
 // Inline
 
@@ -71,13 +76,18 @@ a
 code
   background-color: $code-background
   color: $code
-  font-size: $code-size
-  font-weight: $code-weight
-  padding: $code-padding
+  font-size: 0.8em
+  font-weight: normal
+  +ritmo-paddings(.5)
 
 hr
   background-color: $hr-background-color
   border: none
+  font-size: $code-size
+  font-weight: $code-weight
+  padding: $code-padding
+  +ritmo-top-border(1px)
+  border-top: $border solid
   display: block
   height: $hr-height
   margin: $hr-margin
@@ -91,8 +101,13 @@ input[type="radio"]
   vertical-align: baseline
 
 small
+<<<<<<< HEAD
   font-size: ms(-1)
 
+=======
+  font-size: .8em
+  +ritmo-font-size(.8em)
+>>>>>>> master
 span
   font-style: inherit
   font-weight: inherit
@@ -107,16 +122,22 @@ pre
   +overflow-touch
   background-color: $pre-background
   color: $pre
+  line-height: $base-line-unit
   font-size: 0.875em
   overflow-x: auto
+<<<<<<< HEAD
   padding: ritmo(1)
+=======
+  +ritmo-paddings(1)
+>>>>>>> master
   white-space: pre
   word-wrap: normal
   code
     background-color: transparent
     color: currentColor
     font-size: 1em
-    padding: 0
+    overflow-x: auto
+    +ritmo-paddings(.5)
 
 table
   td,
